@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "arenabosses",
+	"version": "1.0.0",
+	"name": "Arena Bosses",
+	"description": "Custom boss arena manager for Prominence II server",
+	"authors": [ "YourName" ],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["net.admintools.arenabosses.ArenaBossesMod"],
+		"client": ["net.admintools.arenabosses.client.ArenaBossesClient"]
+	},
+	"mixins": [
+		"arenabosses.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17"
+	}
+}
